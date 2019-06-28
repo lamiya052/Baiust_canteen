@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users/sign_up',[
+    'uses' => 'UserController@beforeGetRegister',
+    'as' => 'user.sign_up'
+]);
+
+Route::get('/users/sign_up',[
+    'uses' => 'UserController@postRegister',
+    'as' => 'user.post.register'
+]);
+
+
+

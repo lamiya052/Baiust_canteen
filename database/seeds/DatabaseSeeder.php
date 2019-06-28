@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        Model::unguard();
+        $this->command->info('----- Running Role Type Data Seeder -----');
+        $this->call(RoleTypeSeeder::class);
+        $this->call(DepartmentSeeder::class);
     }
 }
