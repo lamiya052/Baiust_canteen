@@ -15,7 +15,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Full Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('full_name') is-invalid @enderror" name="name" value="{{ old('full_name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control @error('full_name') is-invalid @enderror" name="full_name" value="{{ old('full_name') }}" required autocomplete="name" autofocus>
 
                                 @error('full_name')
                                     <span class="invalid-feedback" role="alert">
@@ -43,9 +43,9 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('User Type') }}</label>
 
                             <div class="col-md-6">
-                                <select class="form-control" id="user_type_id">
+                                <select class="form-control" id="user_type_id" name="user_type_id">
                                     @foreach($user_types as $user_type)
-                                        <option value="{{ $user_type->id }}">{{ $user_type->name }}</option>
+                                        <option value="{{ $user_type->id }}">{{ $user_type->user_type_name }}</option>
                                     @endforeach
                                 </select>
 

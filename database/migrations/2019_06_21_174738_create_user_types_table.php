@@ -18,6 +18,9 @@ class CreateUserTypesTable extends Migration
              $table->string('user_type_name');
             $table->timestamps();
         });
+        Schema::table('users', function($table) {
+            $table->integer('user_type_id');
+        });
     }
 
     /**

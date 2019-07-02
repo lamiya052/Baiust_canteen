@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,5 +15,9 @@ class DatabaseSeeder extends Seeder
         $this->command->info('----- Running Role Type Data Seeder -----');
         $this->call(RoleTypeSeeder::class);
         $this->call(DepartmentSeeder::class);
+        $this->call(UserTypeSeeder::class);
+        $this->command->info('----- Seeding Completed -----');
+
+        Model::reguard();
     }
 }

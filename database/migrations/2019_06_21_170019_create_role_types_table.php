@@ -18,6 +18,9 @@ class CreateRoleTypesTable extends Migration
             $table->string('role_name');
             $table->timestamps();
         });
+        Schema::table('users', function($table) {
+            $table->integer('role_type_id');
+        });
     }
 
     /**

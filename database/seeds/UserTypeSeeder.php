@@ -2,9 +2,9 @@
 
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
-use App\Models\RoleType;
+use App\Models\UserType;
 
-class RoleTypeSeeder extends Seeder
+class UserTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,8 +13,8 @@ class RoleTypeSeeder extends Seeder
      */
     public function run()
     {
-        UsersTypes::truncate();
-        UsersTypes::insert([
+        UserType::truncate();
+        UserType::insert([
             [
                 'id'       =>'1',
                 'user_type_name'       => 'Student',

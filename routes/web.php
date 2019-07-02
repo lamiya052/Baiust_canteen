@@ -15,15 +15,37 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users/sign_up',[
+Route::get('/user/sign_up',[
     'uses' => 'UserController@beforeGetRegister',
     'as' => 'user.sign_up'
 ]);
+Route::get('/user/sign_in', [
+    'uses' => 'UserController@getLogin',
+    'as' => 'user.sign_in'
+]);
 
-Route::get('/users/sign_up',[
+Route::post('/user/sign_in',[
+    'uses' => 'UserController@postLogin',
+    'as'   => 'user.post.sign_in'
+]);
+
+Route::post('/user/sign_up',[
     'uses' => 'UserController@postRegister',
     'as' => 'user.post.register'
 ]);
+
+Route::group(['middleware' => 'auth' , 'prefix' => 'admin'] , function() {
+    Route::get('/', [
+        'uses' => 'Admin\AdminController@index',
+        'as' => 'admin.index'
+    ]);
+    Route::post('/logout', [
+        'uses' => 'Admin\AdminController@getLogout',
+        'as' => 'admin.logout'
+    ]);
+
+
+});
 
 
 

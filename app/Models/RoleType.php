@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class RoleType extends Model
 {
-    //
+   public function users(){
+       return $this->hasmany('App\User');
+   }
 }

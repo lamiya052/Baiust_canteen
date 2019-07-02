@@ -18,6 +18,9 @@ class CreateDepartmentsTable extends Migration
             $table->string('department_name');
             $table->timestamps();
         });
+        Schema::table('users', function($table) {
+            $table->integer('department_id');
+        });
     }
 
     /**
