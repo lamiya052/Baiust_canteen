@@ -44,6 +44,9 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'] , function() {
         'as' => 'admin.logout'
     ]);
 
+    Route::resource('meal_order','Admin\AdminMealOrderController',['as' =>'admin']);
+
+
 
 });
 

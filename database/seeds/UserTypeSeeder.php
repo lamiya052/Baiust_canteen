@@ -27,14 +27,12 @@ class UserTypeSeeder extends Seeder
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
-
             [
-                'id'       => '3',
-                'user_type_name'       => 'Staff',
-                'created_at' => Carbon::now()->toDateTimeString(),
-                'updated_at' => Carbon::now()->toDateTimeString()
-            ]
-
+            'id'       => '3',
+            'user_type_name'       => 'Staff',
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString()
+        ]
         ]);
     }
 }
