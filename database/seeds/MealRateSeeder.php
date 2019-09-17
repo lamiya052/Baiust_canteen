@@ -18,9 +18,9 @@ class MealRateSeeder extends Seeder
             [
                 'id'       =>'1',
                 'meal_rate_name'       => 'package_1',
-                'breakfast_rate'       => '20',
-                'breakfast_menu'       => 'Bread',
-                'lunch_rate'           => '80',
+                'breakfast_rate'       => '30',
+                'breakfast_menu'       => 'Bread,Egg,Banana',
+                'lunch_rate'           => '70',
                 'lunch_menu'           => 'Beef',
                 'dinner_rate'          => '50',
                 'dinner_menu'          => 'Fish',

@@ -16,6 +16,8 @@ class CreateMealPaymentsTable extends Migration
         Schema::create('meal_payments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('amount');
+            $table->date('meal_started_at');
+            $table->date('meal_active_until');
             $table->integer('user_id');
             $table->timestamps();
         });

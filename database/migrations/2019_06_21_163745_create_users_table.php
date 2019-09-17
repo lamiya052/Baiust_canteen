@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('roll_no');
             $table->string('password');
+            $table->integer('balance');
             $table->integer('department_id');
             $table->integer('role_type_id');
             $table->integer('user_type_id');

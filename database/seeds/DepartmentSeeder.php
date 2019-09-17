@@ -17,37 +17,37 @@ class DepartmentSeeder extends Seeder
         Department::insert([
             [
                 'id'       =>'1',
-                'department_name'       => 'CSE',
+                'name'       => 'CSE',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
                 'id'       => '2',
-                'department_name'       => 'EEE',
+                'name'       => 'EEE',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
                 'id'       => '3',
-                'department_name'       => 'Civil',
+                'name'       => 'Civil',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
                 'id'       => '4',
-                'department_name'       => 'DBA',
+                'name'       => 'DBA',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
             'id'       => '5',
-            'department_name'       => 'English',
+            'name'       => 'English',
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
             'id'       => '6',
-            'department_name'       => 'Law',
+            'name'       => 'Law',
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString()
 

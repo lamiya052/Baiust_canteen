@@ -19,12 +19,14 @@ class AdminMealPaymentController extends Controller
         $meal_payments = MealPayment::all();
         return view('admin.meal_payment.index',compact('meal_payments'));
     }
-    public function create(){
+    public function create()
+    {
         $users = User::all();
         return view('admin.meal_payment.create',compact('users'));
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $meal_payment = new MealPayment();
         $meal_payment->amount = $request->amount;
         $meal_payment->meal_started_at = $request->meal_started_at;
@@ -43,7 +45,8 @@ class AdminMealPaymentController extends Controller
 
          $i = 1;
 
-         for($i; $i<=$diff; $i++){
+         for($i; $i<=$diff; $i++)
+         {
              $meal_order = new MealOrder();
              $meal_date = new Carbon($meal_payment->meal_startted_at);
              $meal_date = $meal_date->addDays($i);
@@ -51,7 +54,8 @@ class AdminMealPaymentController extends Controller
              $get_meal_rate = MealRate::where('active',true)->first();
              $total_meal_cost = $get_meal_rate->breakfast_rate + $get_meal_rate->lunch_rate + $get_meal_rate->dinner_rate;
 
-             if(empty($check_meal_order)){
+             if(empty($check_meal_order))
+             {
                  $meal_order->breakfast =1;
                  $meal_order->lunch =1;
                  $meal_order->dinner =1;
