@@ -40,12 +40,49 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="roll_no" class="col-md-4 col-form-label text-md-right">{{ __('Roll No') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="roll_no" type="roll_no" class="form-control @error('roll_no') is-invalid @enderror" name="roll_no" value="{{ old('roll_no') }}" required autocomplete="roll_no">
+
+                                @error('roll_no')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="department_id" class="col-md-4 col-form-label text-md-right">{{ __('Department') }}</label>
+
+                            <div class="col-md-6">
+                                <select class="form-control" id="department_id" name="department_id">
+                                <option value="" >Select </option>
+                                @foreach($departments as $department)
+                                    <option value="{{ $department->id }}">{{ $department->department_name }}</option>
+                                @endforeach
+                                </select>
+
+
+                                @error('department_id')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('User Type') }}</label>
 
                             <div class="col-md-6">
                                 <select class="form-control" id="user_type_id" name="user_type_id">
+                                    <option value="" >Select </option>
                                     @foreach($user_types as $user_type)
-                                        <option value="{{ $user_type->id }}">{{ $user_type->name }}</option>
+                                        <option value="{{ $user_type->id }}">{{ $user_type->user_type_name }}</option>
                                     @endforeach
                                 </select>
 

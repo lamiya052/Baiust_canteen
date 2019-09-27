@@ -17,19 +17,19 @@ class UserTypeSeeder extends Seeder
         UserType::insert([
             [
                 'id'       =>'1',
-                'name'       => 'Student',
+                'user_type_name'       => 'Student',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
                 'id'       => '2',
-                'name'       => 'Teacher',
+                'user_type_name'       => 'Teacher',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
             'id'       => '3',
-            'name'       => 'Staff',
+            'user_type_name'       => 'Staff',
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString()
         ]
