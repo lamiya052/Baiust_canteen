@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Dashboard || OnlineBooksReview Web</title>
+    <title>Dashboard || BaiustCanteen Web</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
