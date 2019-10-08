@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->integer('roll_no');
             $table->string('password');
+            $table->boolean('is_admin')->default(User::REGULAR_USER);
             $table->integer('balance')->default(0);
             $table->timestamps();
         });

@@ -18,14 +18,19 @@
                 <li class="nav">
                     <a href="{{ route('admin.meal_order.index') }}">Meal Orders</a>
                 </li>
+                @if (Auth::user()->is_admin)
                 <li class="nav">
                     <a href="{{ route('admin.meal_report.index') }}">Meal Reports</a>
                 </li>
+                @endif
                 <li class="nav">
                     <a href="{{ route('admin.meal_payment.index') }}">Meal Payments</a>
                 </li>
                 <li class="nav">
                     <a href="{{ route('admin.bazar_cost.index') }}">Bazar Costs</a>
+                </li>
+                <li class="nav">
+                    <a href="{{ route('admin.menu.index') }}">Menus</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

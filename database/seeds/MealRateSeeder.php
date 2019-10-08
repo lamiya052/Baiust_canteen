@@ -17,7 +17,7 @@ class MealRateSeeder extends Seeder
         MealRate::insert([
             [
                 'id'       =>'1',
-                'meal_rate_name'       => 'package_1',
+                'meal_rate_name'       => 'Package 1',
                 'breakfast_rate'       => '30',
                 'breakfast_menu'       => 'Bread,Egg,Banana',
                 'lunch_rate'           => '70',
@@ -31,7 +31,7 @@ class MealRateSeeder extends Seeder
 
             [
                 'id'       =>'2',
-                'meal_rate_name'       => 'package_2',
+                'meal_rate_name'       => 'Package 2',
                 'breakfast_rate'       => '50',
                 'breakfast_menu'       => 'Biriyani',
                 'lunch_rate'           => '60',
@@ -45,7 +45,7 @@ class MealRateSeeder extends Seeder
 
             [
                 'id'       =>'3',
-                'meal_rate_name'       => 'package_3',
+                'meal_rate_name'       => 'Package 3',
                 'breakfast_rate'       => '35',
                 'breakfast_menu'       => 'Khichuri',
                 'lunch_rate'           => '40',
