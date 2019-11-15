@@ -9,4 +9,7 @@ class RoleType extends Model
    public function users(){
        return $this->hasmany('App\User');
    }
+    public function meal_rates(){
+        return $this->hasMany('App\Models\MealRate');
+    }
 }

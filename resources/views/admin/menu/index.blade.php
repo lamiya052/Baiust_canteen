@@ -20,7 +20,10 @@
             <th>Lunch Rate</th>
             <th>Dinner Menu</th>
             <th>Dinner Rate</th>
+
+        @if(Auth::user()->role_type->role_name == 'admin')
             <th>Action</th>
+                @endif
 
         </tr>
         </thead>
@@ -35,14 +38,11 @@
                 <td>{{$menu->lunch_rate}}</td>
                 <td>{{$menu->dinner_menu}}</td>
                 <td>{{$menu->dinner_rate}}</td>
-                {{dd(Auth::user()->user_type_id)}}
-                @if(Auth::user()->role_type->name == 'admin')
 
-
+                @if(Auth::user()->role_type->role_name == 'admin')
                 <td>
                     <a class="btn btn-info pull-middle" href="{{ route('admin.menu.edit',$menu->id) }}">Edit</a>
                 </td>
-
                 @endif
             </tr>
         @endforeach

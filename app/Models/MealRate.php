@@ -6,7 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class MealRate extends Model
 {
-    public function role_types(){
-        return $this->hasMany('App\Models\RoleType', 'role_type_id');
+    public function meal_order(){
+        return $this->belongsTo('App\Models\MealOrder');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+    public function role_type(){
+        return $this->belongsTo('App\Models\RoleType');
     }
 }
