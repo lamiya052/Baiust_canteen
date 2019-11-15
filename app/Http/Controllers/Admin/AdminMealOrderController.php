@@ -72,12 +72,12 @@ class AdminMealOrderController extends Controller
         return redirect(route('admin.meal_order.index'));
     }
 
-    public function  menu()
-    {
-
-        $meal_rate = MealRate::all();
-        return view('admin.menu.index', compact('meal_rate'));
-
-    }
+//    public function  menu()
+//    {
+//
+//        $meal_rate = MealRate::all();
+//        return view('admin.menu.index', compact('meal_rate'));
+//
+//    }
 
 }

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('user.sign_in'));
 });
 
 Route::get('/user/sign_up',[
@@ -48,16 +48,17 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'] , function() {
         'as' => 'admin.meal_report.index'
     ]);
 
-    Route::get('/menu',[
-        'uses' => 'Admin\AdminMealOrderController@menu',
-        'as' => 'admin.menu.index'
-        ]);
+//    Route::get('/menu',[
+//        'uses' => 'Admin\AdminMealOrderController@menu',
+//        'as' => 'admin.menu.index'
+//        ]);
 
 
 
     Route::resource('meal_order','Admin\AdminMealOrderController',['as' =>'admin']);
     Route::resource('meal_payment','Admin\AdminMealPaymentController',['as' =>'admin']);
     Route::resource('bazar_cost','Admin\AdminBazarCostController',['as' =>'admin']);
+    Route::resource('menu','Admin\AdminMealRateController',['as' =>'admin']);
 
 
 
