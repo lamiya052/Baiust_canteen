@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9506021-6e89-497a-948c-302b91bf77c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/buffet.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Usercontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Usercontroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DepartmentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DepartmentSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoleTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoleTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bower_components/ckeditor/.npm/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bower_components/ckeditor/.npm/assets/ckeditor4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/css/AdminLTE.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,9 +117,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dist/css" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Baiust_Canteen\public\dist\css" />
+      <recent name="C:\xampp\htdocs\Baiust_Canteen\public\dist\img" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -149,7 +150,7 @@
       <workItem from="1577682056362" duration="1182000" />
       <workItem from="1579274235417" duration="2888000" />
       <workItem from="1579839440392" duration="34000" />
-      <workItem from="1583074321986" duration="236000" />
+      <workItem from="1583074321986" duration="3546000" />
     </task>
     <servers />
   </component>

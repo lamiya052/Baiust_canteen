@@ -31,7 +31,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
     <div class="register-logo">
-        <a href="../../index2.html"><b>BAIUST</b></a>
+        <p style="color:white;" ><b>BAIUST</b></p>
     </div>
 
     <div class="register-box-body">
