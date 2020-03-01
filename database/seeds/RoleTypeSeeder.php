@@ -17,13 +17,13 @@ class RoleTypeSeeder extends Seeder
         RoleType::insert([
             [
                 'id'       =>'1',
-                'role_name'       => 'admin',
+                'name'       => 'admin',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ],
             [
                 'id'       => '2',
-                'role_name'       => 'general_user',
+                'name'       => 'general_user',
                 'created_at' => Carbon::now()->toDateTimeString(),
                 'updated_at' => Carbon::now()->toDateTimeString()
             ]

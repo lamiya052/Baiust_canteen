@@ -318,7 +318,7 @@
                     <i class="fa fa-pie-chart"></i>
                     <a href="{{ route('admin.meal_order.index') }}"><i class="fa fa-files-o"></i>Meal Orders</a>
                 </li>
-                @if(Auth::user()->role_type->role_name == 'admin')
+                @if(Auth::user()->role_type->name == 'admin')
                     <li class="nav">
                         <a href="{{ route('admin.meal_report.index') }}"><i class="fa fa-files-o"></i>Meal Reports</a>
                     </li>
@@ -328,7 +328,7 @@
                     <a href="{{ route('admin.meal_payment.index') }}"><i class="fa fa-laptop"></i>Meal Payments</a>
                 </li>
 
-                @if(Auth::user()->role_type->role_name == 'admin')
+                @if(Auth::user()->role_type->name == 'admin')
                 <li  class="nav">
                     <a href="{{ route('admin.bazar_cost.index') }}"><i class="fa fa-pie-chart"></i>Bazar Costs</a>
                 </li>

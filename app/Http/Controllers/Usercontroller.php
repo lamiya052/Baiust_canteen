@@ -43,7 +43,6 @@ class UserController extends Controller
             $user['user_type_id'] = $request->user_type_id;
             $user['department_id'] = $request->department_id;
 
-            $user->roll_no            = $request->roll_no;
 
             $user->save();
 
