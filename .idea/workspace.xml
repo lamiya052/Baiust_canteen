@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9506021-6e89-497a-948c-302b91bf77c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_21_163745_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_21_163745_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_21_170019_create_role_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_21_170019_create_role_types_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_21_174549_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_21_174549_create_departments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_21_174738_create_user_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_21_174738_create_user_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,5 +152,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583260661998">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583260661998" />
   </component>
 </project>

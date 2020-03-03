@@ -18,9 +18,9 @@ class CreateUsersTable extends Migration
             $table->string('full_name');
             $table->string('username');
             $table->string('email');
-            $table->integer('roll_no');
+            $table->integer('roll_no')->nullable();
             $table->string('password');
-            $table->boolean('is_admin');
+            $table->boolean('is_admin')->nullable();
             $table->integer('balance')->default(0);
             $table->timestamps();
         });
